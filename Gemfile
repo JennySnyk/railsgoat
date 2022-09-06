@@ -2,7 +2,7 @@
 source "https://rubygems.org"
 
 #don't upgrade
-gem "rails", "6.0.0"
+gem "rails", "6.0.3.7"
 
 ruby "2.6.5"
 
@@ -16,7 +16,7 @@ gem "jquery-rails"
 gem "minitest"
 gem "powder" # Pow related gem
 gem "pry-rails" # not in dev group in case running via prod/staging @ a training
-gem "puma"
+gem "puma", ">= 4.3.8"
 gem "rails-perftest"
 gem "rake"
 gem "responders" #For Rails 4.2 # LOCKED DOWN
@@ -52,7 +52,7 @@ group :development, :test, :mysql do
   gem "database_cleaner"
   gem "launchy"
   gem "poltergeist"
-  gem "rspec-rails", '4.0.0.beta3' # 4/26/2019: LOCKED DOWN
+  gem "rspec-rails", "4.0.0" # 4/26/2019: LOCKED DOWN
   gem "test-unit"
 end
 
